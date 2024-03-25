@@ -1,11 +1,12 @@
 import Two from 'two'
 
 var slices = 1;
-var w = document.documentElement.scrollWidth;;
+var w = document.documentElement.scrollWidth;
 var h = document.documentElement.scrollHeight;
+console.log(w, h);
 var radius = w / 2 - w/9;
-if (radius > h/2 - h/6) {
-  radius = w/2 - 150;
+if (radius > h/2) {
+  radius = h/2 - h/6;
 }
 
 // Make an instance of two and place it on the page.
@@ -24,7 +25,7 @@ text.alignment = 'center';
 var x = two.width * 0.5;
 var y = two.height * 0.5;
 var circle = two.makeCircle(x, y, radius);
-
+console.log(x, y, radius);
 circle.fill = 'lightgreen';
 // And accepts all valid CSS color:
 circle.stroke = 'green';
