@@ -5,7 +5,7 @@ var w = document.documentElement.scrollWidth;
 var h = document.documentElement.scrollHeight;
 console.log(w, h);
 var radius = w / 2 - w/9;
-if (radius > h/2) {
+if (radius > h/2 - h/4) {
   radius = h/2 - h/4;
 }
 
