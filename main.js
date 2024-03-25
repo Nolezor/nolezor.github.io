@@ -1,8 +1,8 @@
 import Two from 'two'
 
 var slices = 1;
-var w = window.innerWidth;
-var h = window.innerHeight;
+var w = document.body.clientWidth;
+var h = document.body.clientHeight;
 var radius = w / 2 - w/9;
 if (radius > h/2 - h/6) {
   radius = w/2 - 150;
