@@ -6,7 +6,7 @@ var h = document.documentElement.scrollHeight;
 console.log(w, h);
 var radius = w / 2 - w/9;
 if (radius > h/2) {
-  radius = h/2 - h/6;
+  radius = h/2 - h/4;
 }
 
 // Make an instance of two and place it on the page.
